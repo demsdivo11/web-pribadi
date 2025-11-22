@@ -1,45 +1,33 @@
-# Personal Page — Basic Scaffold
+# Personal Web — Dhemas Dhiyanugraha Divonegara
 
-Ini repositori berisi template personal page minimalis, modern, dan responsif.
+Landing page pribadi (umur 16, mulai ngoding 2021) untuk menaruh eksperimen dan kontak. Tema utama biru/teal dengan efek morph dan typing di nama.
 
-Files:
-- `index.html` — halaman utama
-- `styles.css` — styling responsif (mobile-first)
-- `script.js` — toggle menu dan update tahun footer
+## Isi repo
+- `index.html` – struktur halaman (hero + stats, cards capabilities, proyek, proses belajar, kontak dengan sosial).
+- `styles.css` – tema, layout, efek glass, caret typing.
+- `script.js` – toggle nav mobile, efek typing nama, reveal-on-scroll, morph blob.
 
-Cara mencoba lokal:
-
-1. Buka `index.html` langsung di browser.
-2. Atau jalankan server sederhana (direkomendasikan untuk fitur relatif):
-
+## Menjalankan lokal
+1) Buka `index.html` langsung di browser, atau  
+2) Jalankan server statis:
 ```powershell
-# di Windows (PowerShell)
-python -m http.server 8000; Start-Process http://localhost:8000
+python -m http.server 8000
+start http://localhost:8000
 ```
 
-Silakan beri tahu saya bagian mana yang ingin Anda ubah: palet warna, tipografi, layout proyek, atau integrasi form nyata. Saya bisa menambahkan variasi atau men-deploy ke GitHub Pages.
+## Fitur utama
+- Header fixed + nav mobile toggle.
+- Typing effect pada nama di hero (hormati prefers-reduced-motion).
+- Morph blob per-section mengikuti warna atribut data.
+- Kartu proyek berisi link ke repo GitHub: GForm-ThreeAI, web-untuk-kelas, edutips, spmb-rank-jarak-skor, bot-tele-mj-helper, services-portofolio, test-kreplin, random-team-mobileLegend.
+- Kontak lengkap dengan email `dhemasdhiyanugraha11@gmail.com`, LinkedIn, IG, dan GitHub.
 
-## Perubahan terbaru (SVG morph & Palettes)
+## Kustomisasi cepat
+- Ganti nama/teks hero di `index.html` (span `.typing-name` data-text).
+- Ubah warna utama di `styles.css` (variabel `--accent` dan `--accent-2`).
+- Edit data morph per-section via atribut `data-morph-color1`, `data-morph-color2`, `data-morph-size`.
+- Tambah proyek baru dengan menyalin elemen `.project-card`.
 
-- Replaced soft blurred div blob with an SVG-based morph (3 soft circles). The morph is GPU-friendly and controlled by JS; it respects `prefers-reduced-motion` and can be toggled off.
-- Added 3 live palette swatches in the header so you can preview palettes quickly.
-- Theme choices and morph state persist in `localStorage`.
-
-### Cara pakai
-
-- **Palette swatches**: klik salah satu swatch kecil di header untuk menerapkan palet tersebut secara instan. Pilihan akan disimpan.
-- **Theme cycle**: klik tombol 🎨 di header untuk bergantian antar tema.
-- **Morph toggle**: klik tombol 💫 di header untuk mengaktifkan/mematikan efek morph.
-
-- **Morph toggle**: tombol toggle di header telah dihapus. Morph tetap aktif secara default (kecuali pengguna sebelumnya mematikannya atau menggunakan prefers-reduced-motion).
-
-### Tempat konfigurasi cepat
-
-- `styles.css` — ubah variabel di blok `:root` (`--accent`, `--accent-2`) untuk men-tune palet utama.
-- `index.html` — setiap `section` memiliki atribut `data-morph-color1`, `data-morph-color2`, dan `data-morph-size` yang dapat Anda edit untuk mengontrol warna dan ukuran morph per-section.
-
-### Aksesibilitas & performa
-
-- Efek morph menghormati `prefers-reduced-motion` dan akan mati jika pengguna meminta motion berkurang.
-- Jika perangkat mengalami lag, Anda dapat mengurangi `stdDeviation` pada elemen `<feGaussianBlur>` di `index.html` atau menghapus filter blur.
-
+## Catatan aksesibilitas
+- Typing dan reveal efek akan nonaktif jika pengguna memilih reduced motion.
+- Header fixed menambah `padding-top` di body supaya konten tidak tertutup.
