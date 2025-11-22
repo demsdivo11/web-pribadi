@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dhemas Dhiyanugraha Divonegara - Personal Page</title>
+  <meta name="description" content="Portofolio pribadi yang modern, responsif, dan terasa premium." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#"><span class="brand-mark">NA</span><span class="brand-text">Dhemas Dhiyanugraha Divonegara</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="#about">Profil</a>
+        <a href="#projects">Karya</a>
+        <a href="#process">Proses</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <div class="header-controls">
+        <a class="btn ghost tiny" href="#contact">Say hi</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SVG morph blob (soft, GPU-friendly) -->
+  <svg id="morph-svg" aria-hidden="true" width="360" height="360" viewBox="0 0 360 360" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <radialGradient id="morphGrad" cx="30%" cy="30%">
+        <stop id="morphStop1" offset="0%" stop-color="#5ef3c8" />
+        <stop id="morphStop2" offset="60%" stop-color="#6d8bff" stop-opacity="0.9" />
+        <stop id="morphStop3" offset="100%" stop-color="transparent" stop-opacity="0" />
+      </radialGradient>
+      <filter id="morphBlur"><feGaussianBlur stdDeviation="40" result="blur"/></filter>
+    </defs>
+    <g id="morph-group" filter="url(#morphBlur)">
+      <circle id="m1" cx="120" cy="120" r="120" fill="url(#morphGrad)" />
+      <circle id="m2" cx="220" cy="80" r="100" fill="url(#morphGrad)" opacity="0.95" />
+      <circle id="m3" cx="180" cy="200" r="90" fill="url(#morphGrad)" opacity="0.9" />
+    </g>
+  </svg>
+
+  <main>
+    <section class="hero" data-morph-color1="#5ef3c8" data-morph-color2="#6d8bff" data-morph-size="460">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Personal site - umur 16, mulai ngoding 2021</p>
+          <h1>Halo, saya <span class="accent typing-name" data-text="Dhemas Dhiyanugraha Divonegara"></span>. Saya suka ngulik web, desain, dan bikin eksperimen digital.</h1>
+          <p class="lead">Ini ruang pribadi untuk menyimpan proyek seru, catatan belajar sejak 2021, dan apa pun yang lagi saya kerjakan.</p>
+          <div class="chip-row">
+            <span class="chip">UI Engineering</span>
+            <span class="chip">Design Systems</span>
+            <span class="chip">Prototype cepat</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn primary" href="#contact">Kirim pesan</a>
+            <a class="btn ghost" href="#projects">Lihat eksperimen</a>
+            <span class="availability">Suka bahas tech/design</span>
+          </div>
+          <div class="stat-row">
+            <div class="stat">
+              <span class="stat-number">16</span>
+              <span class="stat-label">Umur</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2021</span>
+              <span class="stat-label">Mulai belajar</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Fav</span>
+              <span class="stat-label">C++, PHP, Node.js</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-panel reveal">
+          <div class="panel-header">
+            <div class="pill live">On</div>
+            <span>Realtime snapshot</span>
+          </div>
+          <div class="panel-body">
+            <div class="profile">
+              <div class="avatar">DDD</div>
+              <div>
+                <p class="profile-name">Dhemas Dhiyanugraha Divonegara</p>
+                <p class="profile-role">Menyederhanakan produk digital</p>
+              </div>
+            </div>
+            <div class="panel-grid">
+          <div>
+            <p class="label">Fokus</p>
+            <p>Belajar UI, aksesibilitas, animasi kecil yang bikin nyaman.</p>
+          </div>
+          <div>
+            <p class="label">Stack</p>
+            <p>C++, PHP, Node.js, React, Svelte, Tailwind, Figma, Framer.</p>
+          </div>
+        </div>
+        <div class="panel-foot">
+          <p>Ruang catatan, eksperimen, dan cerita proses.</p>
+          <a class="btn primary block" href="#contact">Tinggalkan pesan</a>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal" data-morph-color1="#5ef3c8" data-morph-color2="#8de4ff" data-morph-size="340">
+      <div class="container section-head">
+        <div>
+          <p class="eyebrow">Capabilities</p>
+          <h2>Membangun antarmuka untuk belajar dan seru-seruan.</h2>
+        </div>
+        <p class="muted">Saya suka detail kecil: state kosong, error state, loading yang ramah. Semua jadi bahan eksperimen supaya UI nyaman dipakai.</p>
+      </div>
+      <div class="container grid cards-3">
+        <article class="card">
+          <div class="pill">UI Engineering</div>
+          <h3>Front-end yang rapi</h3>
+          <p>Membangun komponen rapi dengan aksesibilitas, animasi tipis-tipis, dan performa stabil.</p>
+          <ul class="bullets">
+            <li>Design token & theming</li>
+            <li>SSR/SPA siap produksi</li>
+            <li>Perf budget & audit</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="pill">Product Design</div>
+          <h3>Pengalaman penuh</h3>
+          <p>Sketch cepat, mapping user journey, sampai prototipe hi-fi yang bisa dicoba teman-teman.</p>
+          <ul class="bullets">
+            <li>UX research ringan</li>
+            <li>Interactive prototype</li>
+            <li>Microcopy & UX writing</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="pill">Delivery</div>
+          <h3>Handover bersih</h3>
+          <p>Dokumentasi ringan, snippet siap pakai, dan catatan supaya gampang diulang.</p>
+          <ul class="bullets">
+            <li>Storybook / doc site</li>
+            <li>Guideline QA visual</li>
+            <li>Pairing dev/design</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal" data-morph-color1="#ff8f70" data-morph-color2="#ff3d7f" data-morph-size="380">
+      <div class="container section-head">
+        <div>
+          <p class="eyebrow">Selected Work</p>
+          <h2>Eksperimen web yang saya coba belakangan.</h2>
+        </div>
+        <a class="btn ghost tiny" href="#contact">Ngobrol soal project</a>
+      </div>
+      <div class="container grid projects-grid">
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="pill">2025</span>
+            <div class="tags">
+              <span>AI Form</span>
+              <span>Three.js</span>
+            </div>
+          </div>
+          <h3>GForm ThreeAI</h3>
+          <p>Form cerdas dengan sentuhan 3D/Three.js dan AI helper. Eksperimen UI interaktif untuk pengisian data.</p>
+          <div class="meta">
+            <span>Stack: JS, Three.js</span>
+            <span><a href="https://github.com/demsdivo11/GForm-ThreeAI" target="_blank" rel="noreferrer">GitHub</a></span>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="pill">2024</span>
+            <div class="tags">
+              <span>School</span>
+              <span>Landing</span>
+            </div>
+          </div>
+          <h3>Web untuk Kelas</h3>
+          <p>Website ringan untuk kebutuhan kelas/sekolah dengan struktur simpel dan mudah diupdate.</p>
+          <div class="meta">
+            <span>Stack: HTML, CSS, JS</span>
+            <span><a href="https://github.com/demsdivo11/web-untuk-kelas" target="_blank" rel="noreferrer">GitHub</a></span>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="pill">2023</span>
+            <div class="tags">
+              <span>Content</span>
+              <span>Edu</span>
+            </div>
+          </div>
+          <h3>EduTips</h3>
+          <p>Tips belajar berbasis web statis, fokus ke copy ringkas dan layout ramah mobile.</p>
+          <div class="meta">
+            <span>Stack: HTML, CSS</span>
+            <span><a href="https://github.com/demsdivo11/edutips" target="_blank" rel="noreferrer">GitHub</a></span>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="pill">2023</span>
+            <div class="tags">
+              <span>SPMB</span>
+              <span>Calc</span>
+            </div>
+          </div>
+          <h3>SPMB Rank/Jarak Skor</h3>
+          <p>Alat kecil untuk menghitung ranking dan jarak skor pendaftaran, membantu analisis cepat.</p>
+          <div class="meta">
+            <span>Stack: JS</span>
+            <span><a href="https://github.com/demsdivo11/spmb-rank-jarak-skor" target="_blank" rel="noreferrer">GitHub</a></span>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="pill">2023</span>
+            <div class="tags">
+              <span>Bot</span>
+              <span>Helper</span>
+            </div>
+          </div>
+          <h3>Bot Tele MJ Helper</h3>
+          <p>Bot Telegram sederhana untuk bantu workflow Midjourney, otomatisasi prompt dan respon.</p>
+          <div class="meta">
+            <span>Stack: Node.js</span>
+            <span><a href="https://github.com/demsdivo11/bot-tele-mj-helper" target="_blank" rel="noreferrer">GitHub</a></span>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="pill">2024</span>
+            <div class="tags">
+              <span>Service</span>
+              <span>Portfolio</span>
+            </div>
+          </div>
+          <h3>Services Portofolio</h3>
+          <p>Halaman jasa/layanan dengan highlight fitur utama dan call-to-action yang jelas.</p>
+          <div class="meta">
+            <span>Stack: PHP, JS</span>
+            <span><a href="https://github.com/demsdivo11/services-portofolio" target="_blank" rel="noreferrer">GitHub</a></span>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="pill">2023</span>
+            <div class="tags">
+              <span>Testing</span>
+              <span>Automation</span>
+            </div>
+          </div>
+          <h3>Test Kreplin</h3>
+          <p>Eksperimen automatasi/testing sederhana untuk memastikan kualitas fitur.</p>
+          <div class="meta">
+            <span>Stack: JS</span>
+            <span><a href="https://github.com/demsdivo11/test-kreplin" target="_blank" rel="noreferrer">GitHub</a></span>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="pill">2022</span>
+            <div class="tags">
+              <span>Randomizer</span>
+              <span>Game</span>
+            </div>
+          </div>
+          <h3>Random Team Mobile Legend</h3>
+          <p>Randomizer tim untuk main bareng teman, cepat pilih komposisi tanpa ribet.</p>
+          <div class="meta">
+            <span>Stack: JS</span>
+            <span><a href="https://github.com/demsdivo11/random-team-mobileLegend" target="_blank" rel="noreferrer">GitHub</a></span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section reveal" data-morph-color1="#5ef3c8" data-morph-color2="#b8f172" data-morph-size="360">
+      <div class="container section-head">
+        <div>
+          <p class="eyebrow">Cara saya belajar</p>
+          <h2>Langkah kecil yang saya ulang terus.</h2>
+        </div>
+        <p class="muted">Supaya gak stuck, saya pecah tugas jadi fase kecil: cari referensi, coba bangun, dokumentasi singkat, ulangi.</p>
+      </div>
+      <div class="container process">
+        <div class="step">
+          <span class="step-badge">01</span>
+          <div>
+            <h3>Curious & Note</h3>
+            <p>Catat ide, referensi, dan apa yang bikin penasaran.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-badge">02</span>
+          <div>
+            <h3>Build & Break</h3>
+            <p>Coba bangun cepat, tes, dan cari apa yang bisa diimprove.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-badge">03</span>
+          <div>
+            <h3>Share & Reflect</h3>
+            <p>Bikin catatan pendek, publish, dan cek feedback teman.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal" data-morph-color1="#6d8bff" data-morph-color2="#ff3d7f" data-morph-size="400">
+      <div class="container section-head">
+        <div>
+          <p class="eyebrow">Kontak</p>
+          <h2>Mau ngobrol soal coding atau desain?</h2>
+        </div>
+        <p class="muted">Kirim DM atau email, saya senang tukar cerita soal belajar, side-project, atau hal random seputar teknologi.</p>
+      </div>
+      <div class="container grid contact-grid">
+        <form class="contact-form" onsubmit="return false;">
+          <label>Nama
+            <input type="text" name="name" placeholder="Dhemas Dhiyanugraha Divonegara">
+          </label>
+          <label>Email
+            <input type="email" name="email" placeholder="dhemasdhiyanugraha11@gmail.com">
+          </label>
+          <label>Pesan
+            <textarea name="message" rows="5" placeholder="Ceritakan singkat kebutuhan proyek..."></textarea>
+          </label>
+          <p><button class="btn primary" type="submit">Kirim pesan</button></p>
+        </form>
+        <div class="contact-info">
+          <div class="info-card">
+            <p class="label">Prefer DM?</p>
+            <ul class="contact-list">
+              <li>Email: <a href="mailto:dhemasdhiyanugraha11@gmail.com">dhemasdhiyanugraha11@gmail.com</a></li>
+              <li>LinkedIn: <a href="https://www.linkedin.com/in/dhemas-dhiyanugraha-divonegara/" target="_blank" rel="noreferrer">linkedin.com/in/dhemas-dhiyanugraha-divonegara/</a></li>
+              <li>Instagram: <a href="https://www.instagram.com/dhemasdivonegara/?hl=id" target="_blank" rel="noreferrer">@dhemasdivonegara</a></li>
+              <li>GitHub: <a href="https://github.com/demsdivo11" target="_blank" rel="noreferrer">github.com/demsdivo11</a></li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <p class="label">Lokasi dan Zona waktu</p>
+            <p>Jakarta (GMT+7) - Fleksibel buat ngobrol online.</p>
+            <p class="label">Catatan</p>
+            <p>Masih 16 tahun, jadi ini tempat belajar bareng dan dokumentasi perjalanan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small><span id="year"></span> - Dhemas Dhiyanugraha Divonegara - Dibangun dengan fokus pada pengalaman yang bernilai.</small>
+    </div>
+  </footer>
+</body>
+</html>
